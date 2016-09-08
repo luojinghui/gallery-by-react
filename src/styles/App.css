@@ -1,0 +1,161 @@
+/* Base Application Styles */
+@font-face {
+    font-family: 'iconfont';
+    src: url('../fonts/icons/turn-arrow.eot') format("embedded-opentype"), /* IE9*/
+    url('../fonts/icons/turn-arrow.woff') format('woff'), /* chrome、firefox */
+    url('../fonts/icons/turn-arrow.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../fonts/icons/turn-arrow.svg') format('svg'); /* iOS 4.1- */
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    color: #fff;
+    background-color: #eee;
+    width: 100%;
+    height: 100%;
+}
+.app {
+    width: 100%;
+    height: 100%;
+}
+
+/* stage -- start*/
+.stage {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/* stage -- end */
+
+/* img -- start */
+.img-sec {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #ddd;
+    -webkit-perspective: 1800px;
+    -moz-perspective: 1800px;
+         perspective: 1800px;
+}
+.img-figure {
+    position: absolute;
+    width: 300px;
+    height: 340px ;
+    margin: 0;
+    padding: 30px;
+
+    background-color: #fff;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+         transform-style: preserve-3d;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    transition: all ease 1s;
+    /*-webkit-backface-visibility: hidden;*/
+    /*backface-visibility: hidden;*/
+    -ms-transform-origin: 0 50% 0;
+        -moz-transform-origin: 0 50% 0;
+         transform-origin: 0 50% 0;
+    -webkit-transform-origin: 0 50% 0;
+}
+
+.img-back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    text-align: center;
+    color: #666;
+    -webkit-transform: rotateY(180deg) translateZ(1px) ;
+            -moz-transform: rotateY(180deg) translateZ(1px) ;
+         transform: rotateY(180deg) translateZ(1px) ;
+    -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+         backface-visibility: hidden;
+    background: #fff;
+}
+.img-sec .is-inverse {
+    -webkit-transform: translate3D(300px, 0 ,0) rotateY(180deg);
+            -moz-transform: translate3D(300px ,0 ,0) rotateY(180deg);
+         transform: translate3D(300px ,0 ,0) rotateY(180deg);
+}
+figcaption {
+    text-align: center;
+}
+.img-title {
+    margin: 20px 0 0 0;
+    color: #a7a0a2;
+    font-size: 16px;
+}
+/* img -- end */
+/* controller -- start */
+.controller-nav {
+    position: absolute;
+    left: 0%;
+    bottom: 30px;
+    width: 100%;
+    z-index: 101;
+
+    text-align: center;
+}
+/* controller -- end*/
+
+.controller-unit {
+    display: inline-block;
+
+    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    background-color: #aaa;
+    border-radius: 50%;
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -ms-transform: scale(.5);
+        transform: scale(.5);
+}
+.is-center {
+    background-color: #888;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+        transform: scale(1);
+    -webkit-transition: background-color ease .5s, -webkit-transform ease 1s;
+    transition: background-color ease .5s, -webkit-transform ease 1s;
+    -moz-transition: transform ease 1s, background-color ease .5s, -moz-transform ease 1s;
+    transition: transform ease 1s, background-color ease .5s;
+    transition: transform ease 1s, background-color ease .5s, -webkit-transform ease 1s, -moz-transform ease 1s;
+    transition: transform ease 1s, background-color ease .5s, -webkit-transform ease 1s;
+}
+.is-center:after {
+    color: #fff;
+    font-family: 'iconfont';
+    line-height: 30px;
+    content: '\e600';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.controller-nav .is-inverse {
+    background-color: #555;
+
+    -webkit-transform: rotateY(180deg);
+
+        -ms-transform: rotateY(180deg);
+
+        -moz-transform: rotateY(180deg);
+
+            transform: rotateY(180deg);
+}
