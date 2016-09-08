@@ -42,17 +42,10 @@ body, html {
 }
 .img-figure {
     position: absolute;
-<<<<<<< HEAD
-    width: 300px;
-    height: 340px ;
-    margin: 0;
-    padding: 30px;
-=======
     width: 206px;
     height: 270px;
     margin: 0;
     padding: 13px;
->>>>>>> master
 
     background-color: #fff;
     -moz-box-sizing: border-box;
@@ -92,15 +85,9 @@ body, html {
     background: #fff;
 }
 .img-sec .is-inverse {
-<<<<<<< HEAD
-    -webkit-transform: translate3D(300px, 0 ,0) rotateY(180deg);
-            -moz-transform: translate3D(300px ,0 ,0) rotateY(180deg);
-         transform: translate3D(300px ,0 ,0) rotateY(180deg);
-=======
     -webkit-transform: translate3D(206px, 0 ,0) rotateY(180deg);
             -moz-transform: translate3D(206px ,0 ,0) rotateY(180deg);
          transform: translate3D(206px ,0 ,0) rotateY(180deg);
->>>>>>> master
 }
 figcaption {
     text-align: center;
@@ -172,11 +159,8 @@ figcaption {
 
             transform: rotateY(180deg);
 }
-<<<<<<< HEAD
-=======
 
 img {
     width: 180px;
     height: 180px;
 }
->>>>>>> master

@@ -26,11 +26,7 @@ function getDefaultModules() {
     loaders: [
       {
         test: /\.css$/,
-<<<<<<< HEAD
-        loader: 'style-loader!css-loader!autoprefixer-loader?{browsers: ["last 2 version", ""firefox 15"]}'
-=======
         loader: 'style-loader!css-loader!autoprefixer-loader?{browsers: ["last 2 version", "firefox 15"]}'
->>>>>>> master
       },
       {
         test: /\.sass/,
@@ -66,11 +62,7 @@ function getDefaultModules() {
 
 module.exports = {
   srcPath: srcPath,
-<<<<<<< HEAD
-  publicPath: '/assets/',
-=======
   publicPath: '../dist/assets/',
->>>>>>> master
   port: dfltPort,
   getDefaultModules: getDefaultModules
 };
