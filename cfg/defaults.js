@@ -62,11 +62,7 @@ function getDefaultModules() {
 
 module.exports = {
   srcPath: srcPath,
-<<<<<<< HEAD
-  publicPath: '/assets/',
-=======
   publicPath: '../dist/assets/',
->>>>>>> master
   port: dfltPort,
   getDefaultModules: getDefaultModules
 };
