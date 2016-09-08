@@ -32,3 +32,5 @@ y < stage.height / 2 - imgFigure.height / 2 * 3;
 
 下半分区由于要设计导航,所以避免遮挡,不放置图片。
 
+
+[demo](https://luojinghui.github.io/gallery-by-react/src/index.html)
